@@ -1,9 +1,11 @@
 on:
   push:
     branches: main, master
+  release:
+    types: [published]
   workflow_dispatch:
 
-name: Quarto Publish
+name: Quarto Publish am
 
 permissions:
   contents: write
@@ -29,27 +31,28 @@ jobs:
         with:
           r-version: '4.4.1'
 
-      - name: Cache R packages
-        uses: actions/cache@v3
+      - name: Install Wrightmap
+        run: install.packages("WrightMap")
+        shell: Rscript {0}
+        
+      - name: Install R dependencies
+        uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          path: ${{ env.R_LIBS_USER }}
-          key: ${{ runner.os }}-r-${{ hashFiles('**/*.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-r-
+          packages:
+            any::rmarkdown
+            any::TAM
+            any::RColorBrewer
 
-      - name: Install pak
-        run: install.packages('pak')
-        shell: Rscript {0}
-
-      - name: Install dependencies using pak
-        run: |
-          pak::pkg_install(c("WrightMap", "TAM", "knitr", "rmarkdown", "downlit", "xml2", "ggplot2", "psych", "QuantPsyc", "TeachingDemos", "rockchalk"))
-        shell: Rscript {0}
-
-      - name: Render and Deploy to Github Pages
+      - name: Render Quarto Project
+        uses: quarto-dev/quarto-actions/render@v2
+        with:
+          path: website
+          to: html
+  
+      - name: Deploy to Github Pages
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
-          path: website
+          render: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
