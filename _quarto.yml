@@ -2,6 +2,7 @@ project:
   type: website
   resources: 
     - "website/*"
+  render: ["website/*.qmd"]
 website:
   title: "WrightMap"
   navbar:
