@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://amalborn@github.com/amalborn/wrightmap.git/website/about.html</loc>
-    <lastmod>2024-09-25T15:49:42.780Z</lastmod>
+    <loc>https://amalborn@github.com/amalborn/wrightmap.git/website/tutorial05.html</loc>
+    <lastmod>2024-09-25T15:49:42.782Z</lastmod>
   </url>
   <url>
-    <loc>https://amalborn@github.com/amalborn/wrightmap.git/website/index.html</loc>
-    <lastmod>2024-09-25T15:49:42.781Z</lastmod>
-  </url>
-  <url>
-    <loc>https://amalborn@github.com/amalborn/wrightmap.git/website/tutorial02.html</loc>
+    <loc>https://amalborn@github.com/amalborn/wrightmap.git/website/tutorial03.html</loc>
     <lastmod>2024-09-25T15:49:42.781Z</lastmod>
   </url>
   <url>
     <loc>https://amalborn@github.com/amalborn/wrightmap.git/website/tutorial01.html</loc>
     <lastmod>2024-09-25T15:49:42.781Z</lastmod>
-  </url>
-  <url>
-    <loc>https://amalborn@github.com/amalborn/wrightmap.git/website/example02.html</loc>
-    <lastmod>2024-09-25T15:49:42.780Z</lastmod>
   </url>
   <url>
     <loc>https://amalborn@github.com/amalborn/wrightmap.git/website/example03.html</loc>
@@ -29,12 +21,20 @@
     <lastmod>2024-09-25T15:49:42.780Z</lastmod>
   </url>
   <url>
-    <loc>https://amalborn@github.com/amalborn/wrightmap.git/website/tutorial03.html</loc>
+    <loc>https://amalborn@github.com/amalborn/wrightmap.git/website/about.html</loc>
+    <lastmod>2024-09-25T15:49:42.780Z</lastmod>
+  </url>
+  <url>
+    <loc>https://amalborn@github.com/amalborn/wrightmap.git/website/example02.html</loc>
+    <lastmod>2024-09-25T15:49:42.780Z</lastmod>
+  </url>
+  <url>
+    <loc>https://amalborn@github.com/amalborn/wrightmap.git/website/index.html</loc>
     <lastmod>2024-09-25T15:49:42.781Z</lastmod>
   </url>
   <url>
-    <loc>https://amalborn@github.com/amalborn/wrightmap.git/website/tutorial05.html</loc>
-    <lastmod>2024-09-25T15:49:42.782Z</lastmod>
+    <loc>https://amalborn@github.com/amalborn/wrightmap.git/website/tutorial02.html</loc>
+    <lastmod>2024-09-25T15:49:42.781Z</lastmod>
   </url>
   <url>
     <loc>https://amalborn@github.com/amalborn/wrightmap.git/website/tutorial04.html</loc>
