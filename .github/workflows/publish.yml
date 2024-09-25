@@ -43,13 +43,12 @@ jobs:
 
       - name: Install dependencies using pak
         run: |
-          pak::pkg_install(c("WrightMap", "knitr", "rmarkdown", "downlit", "xml2", "ggplot2", "psych", "QuantPsyc", "TeachingDemos", "rockchalk"))
+          pak::pkg_install(c("WrightMap", "TAM", "knitr", "rmarkdown", "downlit", "xml2", "ggplot2", "psych", "QuantPsyc", "TeachingDemos", "rockchalk"))
         shell: Rscript {0}
 
       - name: Render and Deploy to Github Pages
         uses: quarto-dev/quarto-actions/publish@v2
         with:
-          target: gh-pages
           path: website
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
