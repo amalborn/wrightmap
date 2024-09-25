@@ -1,1 +1,0 @@
-Sitemap: https://amalborn@github.com/amalborn/wrightmap.git/sitemap.xml
