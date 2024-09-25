@@ -43,6 +43,7 @@ rsm.sim.thresholds
 #| dev: ["svg", "png"]
 #| fig-cap: ""
 #| results: "hide"
+#| width: 100%
 #| dpi: 300
 wrightMap(rsm.sim.thetas, rsm.sim.thresholds)
 ```
