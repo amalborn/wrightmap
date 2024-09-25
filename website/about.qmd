@@ -1,8 +1,8 @@
 ---
-title: "About WrightMap"
+title: "About WrightMap - AM"
 subtitle: "IRT item-person maps with ConQuest integration"
 author: "David Torres Irribarra"
-date: "25/09/2024"
+date: "09/26/2024"
 toc: true
 format: html
 css: custom.css
@@ -43,8 +43,6 @@ rsm.sim.thresholds
 #| dev: ["svg", "png"]
 #| fig-cap: ""
 #| results: "hide"
-#| fig-width: 8
-#| fig-height: 5
 #| dpi: 300
 wrightMap(rsm.sim.thetas, rsm.sim.thresholds)
 ```
