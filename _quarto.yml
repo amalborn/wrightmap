@@ -1,5 +1,6 @@
 project:
   type: website
+  execute-dir: website
 website:
   title: "WrightMap"
   navbar:
